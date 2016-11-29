@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>静远科技官网</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			ul{list-style: none;}
+			a{text-decoration: none;}
+			p,span{
+				font-family: arial,"微软雅黑";
+			}
+			.header{
+				height: 50px;
+				padding-top: 0px;
+			}
+			.jyimg{
+				margin-left: 80px;
+				height: 10px;
+				float: left;
+				display: block;
+			}
+			
+			
+			.moveIMG{
+				margin-top: 8px;
+				height: 600px;
+				background: black;
+				position: relative;
+				overflow: hidden;
+			}
+			}
+			.moveIMG .ul_1 li{
+				height: 600px;
+				overflow: hidden;
+			}
+			
+			.moveIMG .ul_1 li img{
+				width: 100%;
+				height: 600px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				overflow: hidden;
+				display: none;
+				user-select: none;
+			}
+			.moveIMG #button, .moveIMG #button_r{
+				-webkit-user-select: none;
+				-moz-user-focus: none;
+				-ms-user-select: none;
+				user-select: none;
+				cursor: pointer;
+				font-size: 35px;
+				
+				width: 35px;
+				height: 90px;
+				color: rgba(64,64,64,0.3);
+				background-color: rgba(178,178,178,0.3);
+				position: absolute;
+				top: calc(50% - 45px);
+				line-height: 90px;
+				text-align: center;
+				opacity: 0;
+			}
+			#button_r{
+				right: 0px;
+			}
+			.ul_2{
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 573px;
+				opacity: 0;
+			}
+			.ul_2 li{
+				margin-left: 1px;
+				display: inline-block;
+				float: left;
+				width: 50px;
+				height: 50px;
+				color: rgba(64,64,64,0.8);
+				background-color: rgba(178,178,178,0.8);
+				line-height: 50px;
+				text-align: center;
+				user-select: none;
+				cursor: pointer;
+			}
+			.fixed{
+				width: 100%;
+				height: 55px;	
+				background: rgb(207,5,11);
+				position: fixed;
+			}
+			.tit{
+				margin-left: 60px;
+				/*color: rgb(69,77,204);*/
+				font-family: arial;
+				font-size: 45px;
+				font-style: italic;
+				font-weight: 800;
+				color: gainsboro;
+			}
+			.a_box a{
+				font-family: "微软雅黑";
+				font-size: 18px;
+				margin-left: 90px;
+				line-height: 55px;
+				text-align: center;
+				color: white;
+			}
+			.a_box{
+				float: right;
+				margin-right: 100px;
+			}
+			.moveIMG:hover .ul_2{
+				opacity: 1;
+			}
+			.moveIMG:hover #button{
+				opacity: 1;
+			}
+			.moveIMG:hover #button_r{
+				opacity: 1;
+			}
+			#button:active{
+				background-color: rgb(207,5,11);
+				color: white;
+			}	
+			#button_r:active{
+				background-color: rgb(207,5,11);
+				color: white;
+			}	
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var botl = document.getElementById("button");
+				var botr = document.getElementById("button_r");
+				var arrIMG = document.getElementsByTagName("img");
+				var arrLi = document.getElementsByTagName("li");
+				var nowIndex = 1;
+				arrIMG[nowIndex].style.display="inline-block";
+				arrLi[nowIndex+3].style.background="rgba(207,5,11,0.8)";
+				arrLi[nowIndex+3].style.color="white";
+				botr.onmouseup = function(){
+					nowIndex++;
+					if(nowIndex>4)	nowIndex=1;
+					for(var i=1; i<5; i++){
+						arrIMG[i].style.display="none";
+						arrLi[i+3].style.background="rgba(178,178,178,0.8)";
+						arrLi[i+3].style.color="rgba(64,64,64,0.8)";
+					}
+					arrIMG[nowIndex].style.display="inline-block";
+					arrLi[nowIndex+3].style.background="rgba(207,5,11,0.8)";
+					arrLi[nowIndex+3].style.color="white";
+				}
+				botl.onmouseup = function(){
+					nowIndex--;
+					if(nowIndex<1)	nowIndex=4;
+					for(var i=1; i<5; i++){
+						arrIMG[i].style.display="none";
+						arrLi[i+3].style.background="rgba(178,178,178,0.8)";
+						arrLi[i+3].style.color="rgba(64,64,64,0.8)";
+					}
+					arrIMG[nowIndex].style.display="inline-block";
+					arrLi[nowIndex+3].style.background="rgba(207,5,11,0.8)";
+					arrLi[nowIndex+3].style.color="white";
+				}
+				for(var i=1; i<5; i++){
+					arrLi[i+3].index=i;
+					arrLi[i+3].onmouseover = function(){
+						for(var i=1; i<5; i++){
+							arrIMG[i].style.display="none";
+							arrLi[i+3].style.background="rgba(178,178,178,0.8)";
+							arrLi[i+3].style.color="rgba(64,64,64,0.8)";
+						}
+						arrIMG[this.index].style.display="inline-block";
+						arrLi[this.index+3].style.background="rgba(207,5,11,0.8)";
+						arrLi[this.index+3].style.color="white";
+						nowIndex=this.index;
+					}
+				}
+				setInterval(function(){
+					nowIndex++;
+					if(nowIndex>4)	nowIndex=1;
+					for(var i=1; i<5; i++){
+						arrIMG[i].style.display="none";
+						arrLi[i+3].style.background="rgba(178,178,178,0.8)";
+						arrLi[i+3].style.color="rgba(64,64,64,0.8)";
+					}
+					arrIMG[nowIndex].style.display="inline-block";
+					arrLi[nowIndex+3].style.background="rgba(207,5,11,0.8)";
+					arrLi[nowIndex+3].style.color="white";
+				},3000);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="fixed">		
+			<span class="tit">JYCOMM</span>
+			<div class="a_box">
+				<a>首页</a>
+				<a>成功案例</a>
+				<a>行业应用</a>
+				<a>资料下载</a>
+				<a>选型指南</a>			
+				<a>关于我们</a>
+			</div>
+			
+		</div>
+		<div class="header">
+			<img class="jyimg" src=""/>
+		</div>
+		<div class="moveIMG">
+			<ul class="ul_1">
+				<li><img src="img/正面160_120.jpg"/></li>
+				<li><img src="img/jyc331D3.png"/></li>
+				<li><img src="img/JY39.gif"/></li>
+				<li><img src="img/commonusing.jpg"/></li>
+			</ul>
+			<span id="button"><</span>
+			<span id="button_r">></span>
+			<ul class="ul_2">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+			
+		</div>
+		<div class="down">
+			
+		</div>
+	</body>
+</html>
