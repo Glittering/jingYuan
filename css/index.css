@@ -1,0 +1,185 @@
+
+.header {
+    height: 50px;
+    padding-top: 0;
+}
+
+.jyimg {
+    margin-left: 80px;
+    height: 10px;
+    float: left;
+    display: block;
+}
+
+.moveIMG {
+    min-width: 1280px;
+    top: 55px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 55px);
+    background: black;
+    overflow: hidden;
+}
+
+.moveIMG .ul_1 li {
+    height: 600px;
+    overflow: hidden;
+}
+
+.moveIMG .ul_1 li img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: none;
+    user-select: none;
+}
+
+.moveIMG #button, .moveIMG #button_r {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 35px;
+
+    width: 35px;
+    height: 90px;
+    color: rgba(64, 64, 64, 0.3);
+    background-color: rgba(178, 178, 178, 0.3);
+    position: absolute;
+    top: calc(50% - 45px);
+    line-height: 90px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.75s;
+}
+
+#button_r {
+    right: 0;
+}
+
+.ul_2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 573px;
+    opacity: 0;
+    transition: opacity 0.75s;
+}
+
+.ul_2 li {
+    margin-left: 1px;
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    color: rgba(64, 64, 64, 0.8); /*灰色底*/
+    background-color: rgba(178, 178, 178, 0.8); /*灰色字*/
+    line-height: 50px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.moveIMG:hover .ul_2 {
+    opacity: 1;
+}
+
+.moveIMG:hover #button {
+    opacity: 1;
+}
+
+.moveIMG:hover #button_r {
+    opacity: 1;
+}
+
+#button:active {
+    background-color: rgb(207, 5, 11);
+    color: white;
+}
+
+#button_r:active {
+    background-color: rgb(207, 5, 11);
+    color: white;
+}
+
+.down div img {
+    overflow: hidden;
+
+}
+
+.down {
+    margin-top: calc(50% - 15px);
+}
+
+/*主体图的div*/
+.img_1, .img_2, .img_3, .img_4, .img_5 {
+    height: 629px;
+    width: 100%;
+    min-width: 1280px;
+    background-color: rgb(37, 33, 33);
+    position: relative;
+}
+
+/*主体图*/
+.img_1 img, .img_2 img, .img_3 img, .img_4 img, .img_5 img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+/*文字的div*/
+.img_1 div, .img_2 div, .img_3 div, .img_4 div, .img_5 div {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 250px;
+    left: 200px;
+    /*background: yellowgreen;*/
+}
+
+/*文字的span*/
+.img_1 div span, .img_2 div span, .img_3 div span, .img_4 div span, .img_5 div span {
+
+    position: absolute;
+    top: 70px;
+    color: white;
+    display: block;
+    line-height: 40px;
+    text-align: left;
+    /*background-image: linear-gradient(90deg,transparent 20%,black 100%);*/
+
+}
+
+/*主体图特殊*/
+.img_2 div, .img_3 div, .img_5 div {
+    top: 0;
+}
+
+.img_2 div span, .img_3 div span, .img_5 div span {
+    top: 30px;
+    padding:0px 13px;
+}
+
+.img_2, .img_4 {
+    background: white;
+}
+
+.img_1 div span, .img_3 div span,.img_5 div span{
+    background: rgba(255,255,255,0.25);
+    padding: 0px 13px;
+}
+.img_2 div span, .img_4 div span{
+    background: rgba(26, 22, 22, 0.3);
+}
+.img_5 div{
+    left: 800px;
+}
+

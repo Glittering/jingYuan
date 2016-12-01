@@ -1,0 +1,11 @@
+*{margin: 0;padding: 0;font-family: arial,"微软雅黑";}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{min-width: 1280px;}
+.fixed{z-index:2;min-width: 1280px;width: 100%;height: 55px;background: rgb(207,5,11); /*中国红*/position: fixed;}
+.tit{margin-left: 60px;/*color: rgb(69,77,204);*/font-family: arial;font-size: 45px;font-style: italic;font-weight: 800;color: gainsboro;}
+.a_box a{font-family: "微软雅黑";font-size: 18px;margin-left: 50px;line-height: 55px;text-align: center;color: white;}
+.a_box{float: right;margin-right: 100px;}
+.company{width: 100%;height: 200px;margin-top: calc(50% - 643px);background: white;}
+.company span{font-size: 8px;display: block;line-height: normal;text-align: center;}
+.company span:first-child{margin-top: 50px;}
