@@ -1,25 +1,13 @@
-/*html{height: 100%;}*/
-/*body{min-width: 1280px;height: 100%;}*/
-/*!*主体*!*/
-/*.all{*/
-    /*margin: auto;*/
-    /*padding-top: 55px;*/
-    /*width: 1100px;*/
-    /*height: calc(100% - 55px);*/
-    /*background: yellow;*/
-    /*position: relative;*/
-/*}*/
-/*!*左侧*!*/
-/*.leftModel{*/
-    /*position: absolute;*/
-    /*width: 20%;*/
-    /*background: red;*/
-    /*height: 500px;*/
-/*}*/
-/*!*右侧*!*/
-/*.rightModel{*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, "微软雅黑";
+}
+ul{list-style: none;}
 
-/*}*/
+a {
+    text-decoration: none;
+}
 
 body {
     min-width: 1280px;
@@ -86,20 +74,16 @@ table{
     position: absolute;
     right:100px;
     top:130px;
-    /*border-collapse: collapse;*/
     border-left:1px solid red;
     /*border-spacing: 20px;*/
 }
 td{
-    padding:15px 57px;border:0 dashed #9C9C9C;
+    padding:15px 75px;border:0 dashed #9C9C9C;
 }
 table a:hover{
-    color: darkblue;
+    color:darkblue;
 }
-li a{
-    color: black;
-    font-weight: 600;
-}
+
 .banner_left p{
     padding-bottom: 20px;
 }
@@ -108,3 +92,8 @@ td a{
     color: cornflowerblue;
 }
 .company{padding-top: 3px;}
+
+li a{
+    color:black;
+    font-weight: 600;
+}

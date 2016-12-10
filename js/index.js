@@ -36,7 +36,7 @@ window.onload = function () {
                                     clearInterval(oTimeD);
                                     document.body.scrollTop=end;
                                 }
-                            },3);
+                            },1.5);
                         };
                         // if (nowTop >= end){
                         //     console.log(oTimeD);
@@ -58,7 +58,7 @@ window.onload = function () {
                                     clearInterval(oTimeU);
                                     document.body.scrollTop=endUp;
                                 }
-                            },3);
+                            },1.5);
                         }
                         // if(nowTop<=endUp){
                         //     clearInterval(oTimeU)

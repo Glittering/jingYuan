@@ -1,0 +1,51 @@
+li a{
+    color: black;
+    font-weight: 600;
+}
+.banner_left p{
+    padding-bottom: 20px;
+}
+
+.company{padding-top: 3px;}
+.banner_left a:hover{
+    color: darkgrey;
+}
+.banner_left{
+    margin-top: 60px;
+
+}
+.banner_left li{
+    width:180px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding:10px;
+    border-bottom:3px solid red;
+}
+.banner{
+    width:1100px;
+    height:700px;
+    margin: auto;
+    padding-top:100px;
+    position: relative;
+}
+.main{
+    position: absolute;
+    left: 300px;
+    top: 150px;
+}
+.main h3{
+    padding-bottom: 20px;
+}
+.main p{
+    line-height: 30px;
+}
+.company_div{
+    top: 1610px;
+}
+.company{
+    position: absolute;
+    top: 1630px;
+}
+.banner_left{
+    position: fixed;
+}
