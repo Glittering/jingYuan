@@ -36,7 +36,7 @@ window.onload = function () {
                                     clearInterval(oTimeD);
                                     document.body.scrollTop=end;
                                 }
-                            },1.5);
+                            },0.001);
                         };
                         // if (nowTop >= end){
                         //     console.log(oTimeD);
@@ -58,7 +58,7 @@ window.onload = function () {
                                     clearInterval(oTimeU);
                                     document.body.scrollTop=endUp;
                                 }
-                            },1.5);
+                            },0.001);
                         }
                         // if(nowTop<=endUp){
                         //     clearInterval(oTimeU)
@@ -68,11 +68,14 @@ window.onload = function () {
                    scrollHeight = document.body.scrollHeight;
                    console.log(nowTop);
                    console.log(document.body.scrollHeight);
+                   console.log(window.innerWidth);
+                   if (window.innerWidth>=1280){
                     timerDown(100,500,624,0);
                     timerDown(680,1160,1252,624);
                     timerDown(1320,1770,1881,1252);
                     timerDown(2000,2410,2508,1881);
                     timerDown(2600,3000,3140,2508);
+                   }
                };
 
 //				当前图

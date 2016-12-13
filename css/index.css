@@ -1,11 +1,17 @@
-body{
-
+html,body{
 }
+@media screen and (min-width: 1280px) {
+    .down{margin-top: calc(50% - 15px);}
+}
+@media screen and (max-width: 1280px){
+    .down {margin-top: calc(50% - 50px);}
+}
+
 .header {
     height: 50px;
     padding-top: 0;
 }
-
+#use{cursor: default}
 .jyimg {
     margin-left: 80px;
     height: 10px;
@@ -113,9 +119,7 @@ body{
 
 }
 
-.down {
-    margin-top: calc(50% - 15px);
-}
+
 
 /*主体图的div*/
 .img_1, .img_2, .img_3, .img_4, .img_5 {

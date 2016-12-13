@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JYC111A1</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/successCase.css">
+    <link rel="stylesheet" href="../css/successCase_JYC.css">
+    <style>
+        .textBox{
+            height: 3700px;
+        }
+        .company_div{
+            top: 3900px;
+        }
+        .company{
+            top: 4000px;
+        }
+    </style>
+</head>
+<body>
+<!--固定顶栏-->
+<div class="fixed">
+    <span class="tit">JYCOMM</span>
+    <div class="a_box">
+        <a href="../index.html">首页</a>
+        <a href="../successCase.html">成功案例</a>
+        <a href="../businessUsage.html">行业应用</a>
+        <a href="../downloadMess.html">资料下载</a>
+        <a href="../selectInfo.html">选型指南</a>
+        <a href="../aboutCom.html">关于我们</a>
+    </div>
+</div>
+<div class="qqFixed">
+    <div><a target="blank" href="tencent://message/?uin=709861673&amp;Site=www.jycomm.com&amp;Menu=yes">QQ:709861673&nbsp;&nbsp;</a>
+    </div>
+    <div><a target="blank"
+            href="tencent://message/?uin=1013550886&amp;Site=www.jycomm.com&amp;Menu=yes">QQ:1013550886</a></div>
+    <div><a target="blank" href="https://item.taobao.com/item.htm?id=44194034845">
+        &nbsp;&nbsp;&nbsp;前往淘宝购买&nbsp;&nbsp;</a></div>
+</div>
+
+<div class="banner">
+    <div class="banner_lt">
+        <p style="font-weight: 900; font-size: 20px;">产品选型</p>
+        <p style="color:rgb(207,5,11);margin-left: 10px;margin-top: 20px;">>>GPRS短信DTU</p>
+        <ul>
+            <li><a href="../successCase.html">JYC311A6 短信 DTU</a></li>
+            <li><a href="successCase_JYC331B1.html">JYC331B1 GPRS 双通道 DTU</a></li>
+            <li><a href="successCase_JYC331A6.html">JYC331A6 GPRS 双通道 DTU</a></li>
+            <li><a href="successCase_JYC111A1.html">JYC111A1 短信 外置DTU</a></li>
+            <li><a href="successCase_JYC221A6.html"> JYC221A6 GPRS 外置DTU</a></li>
+            <li><a href="successCase_JYC331D3.html">JYC331D3 GPRS 双通道 DTU</a></li>
+        </ul>
+        <p style="color:rgb(207,5,11);margin-left: 10px;margin-top: 20px;">>>工业 MODEM 系列</p>
+        <ul>
+            <li><a href="successCase_JYC301.html"> JYC301 GSM MODEM</a></li>
+            <li><a href="successCase_JYC401.html"> JYC401 CDMA MODEM</a></li>
+        </ul>
+    </div>
+
+    <!--<div class="banner_right">-->
+    <!--<p>JYC331B1</p>-->
+    <!--</div>-->
+    <img class="pic" src="../img/blank2.jpg" alt="">
+    <div class="textBox">
+        <div>JYC111A1</div>
+        <h3>JYC111A1 短信 外置DTU </h3>
+        <p>JYC111A1是一款采用 Cinterion
+            模块设计的工业级短信DTU。能够灵活的收发短信，支持中英文短信的的收发。可采用透明模式的短信的收发。支持用户定义模式短信的收发。适合单片机系统和手机交互的短信收发。单片机可给手机发送中文短信。不需要了解UNICODE编码和复杂的短信协议，就能收发短信。极大缩短产品上市周期，降低产品开发成本，快速占有市场。</p>
+        <h4>产品简介：</h4>
+        <p>JYC111A1是基于GSM网络研制的。在温度范围、抗干扰等方面均采用特殊设计，保证了恶劣环境下的工作稳定性，为您的设备提供了高质量保证。
+            提供标准RS232 接口，485接口（可选）, 可用于传输数据不多的远程抄表，监控，监测项目中。</p>
+        <h3>一、协议模式</h3>
+        <h4>1、发送短消息</h4>
+        <p>目标手机号码: 编码方式: 数据：目标手机号码</p>
+        <p>例如：13102859936</p>
+        <p>半角冒号为分割符</p>
+        <p>编码方式：1（0x31）：</p>
+        <p>对手机发送（纯英文，包括数字，最大160，如果有中文，最大发送70个字符）</p>
+        <p>
+            2（0x32）：二进制数据（140字节）</p>
+        <p>例如：</p>
+        <p>13582311125:1:hello </p>
+        <p>说明： 向号码 13582311125发送数据 hello，编码方式是对手机发送。</p>
+        <p> 应答消息</p>
+        <table class="table_two" border="1" cellspacing="0" cellpadding="0" width="554">
+
+            <tr>
+                <td >
+                    'S'
+                </td>
+                <td >
+                    'M'
+                </td>
+                <td >
+                    'S'
+                </td>
+                <td >   '_'
+                </td>
+                <td > 'S'
+                </td>
+                <td > 'E'
+                </td>
+                <td >'N'
+                </td>
+                <td > 'D'
+                </td>
+                <td >'_'
+                </td>
+                <td >'S'
+                </td>
+                <td>'U'
+                </td>
+                <td >'C'
+                </td>
+                <td > 'E'
+                </td>
+                <td>'S'
+                </td>
+                <td>'S'
+                </td>
+                <td >0x0D
+                </td>
+                <td > 0x0A
+                </td>
+                <td > 0x0D
+                </td>
+                <td > 0x0A
+                </td>
+            </tr>
+        </table>
+        <p>表示发送成功 。</p>
+        <p>字符串：SMS_SEND_SUCESS\r\n\r\n </p>
+        <table class="table_two" border="1" cellspacing="0" cellpadding="0" width="554">
+            <tbody>
+            <tr>
+                <td > 'S'
+                </td>
+                <td > 'M'
+                </td>
+                <td > 'S'
+                </td>
+                <td > '_'
+                </td>
+                <td > 'S'
+                </td>
+                <td > 'E'
+                </td>
+                <td > 'N'
+                </td>
+                <td >  'D'
+                </td>
+                <td>'_'
+                </td>
+                <td > 'F'
+                </td>
+                <td > 'A'
+                </td>
+                <td > 'I'
+                </td>
+                <td >'L'
+                </td>
+                <td>0x0D
+                </td>
+                <td >  0x0A
+                </td>
+                <td > 0x0D
+                </td>
+                <td > 0x0A
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p>发送失败。</p>
+        <p>字符串 SMS_SEND_FAIL\r\n\r\n</p>
+        <p>
+            在正常情况下，3~6秒发送一条短信，DTU会返回SMS_SEND_SUCESS\r\n\r\n。。发送成功。在网络信号不好，或者其它的问题造成发送不成功，DTU会重试1次，如果在20s的时候仍然没有发送成功，会返回发送失败提示信息。</p>
+        <h4>2、接收协议</h4>
+        <p>接收短消息：发送者手机号码:短信内容</p>
+        <p>发送者手机号码：定长20字节，如果不足20字节，用空格（0x20）补齐。</p>
+        <p>例如 8613582311125ᄂᄂᄂᄂᄂᄂᄂ，13582311125ᄂᄂᄂᄂᄂᄂᄂᄂᄂ，031185661213ᄂᄂᄂᄂᄂᄂᄂᄂ。</p>
+        <p>半角冒号为分割符</p>
+        <p>例如：</p>
+        <p>15830992880ᄂᄂᄂᄂᄂᄂᄂᄂᄂ:hello </p>
+        <p>说明： 收到号码15830992880 的数据 hello</p>
+        <p> 在跟手机通信过程中，发送采用自动处理，或者Unicode 编码。接收手机的短信都是ASCII。在DTU跟DTU通信过程中，发送可选二进制编码，接收的短信，根据发送DTU的设置，可以是ASCII和二进制编码。</p>
+        <h3>二、透明模式</h3>
+        <h4>1、发送协议</h4>
+        <p>终端模式是透明模式。向串口发送数据将不做任何增减的发送到预置到DTU内部的目标手机号码。</p>
+        <p>终端模式的数据为透明模式。向串口发送
+            hello，则直接向串口发送，不需要指定任何内容</p>
+        <h4>2、接收协议</h4>
+        <p> DTU收到短信之后，DTU只将短信的数据部分通过串口发送出来。发送的手机号将被忽略。</p>
+        <p>收到数据 hello，不指明是什么手机号发来的。</p>
+        <h4>适用行业：</h4>
+        <p>电、水、气三表抄送 </p>
+        <p>遥控遥测、远程监控 </p>
+        <p>消防、安防报警 </p>
+        <p>气象、环境、交通监测 </p>
+        <h4>基本功能及特点：</h4>
+        <p> GSM网络覆盖的地方均可传输；</p>
+        <p> 系统中心的设置灵活多变，不受地理限制； </p>
+        <p> 可以内嵌仪表通信协议，仪表设备无需任何改动；</p>
+        <p> 尺寸紧凑，便于仪表集成；</p>
+        <table cellspacing="0" cellpadding="0" align="left" border="1" id="table4">
+            <tr>
+                <td colspan="2">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <strong>工作环境</strong></td>
+                <td valign="top">
+                    <strong>电源</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    模块工作温度 ：-35°C～+55°C
+                </td>
+                <td>
+                    标准电源：DC 12V 电压范围（6～36V）
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    湿度范围 ：0－95%，非冷凝
+                </td>
+                <td>
+                    工作电流：待机平均22mA，发射数据220mA@+12V DC
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    天线接口：50Ω/SMA 阴头
+                </td>
+                <td>
+                    用户数据接口：RS232/RS485
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    波特率：300～115200 BPS
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>吸盘式天线</b></td>
+            </tr>
+            <tr>
+                <td>
+                    天线接口：50Ω/SMA 阳头
+                </td>
+                <td>
+                    馈线长度：1.5、3米可选>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <!--<div class="company">-->
+    <!--<span>石家庄市静远电子科技有限公司 备案/许可证编号为：冀ICP备15006707号</span><br>-->
+    <!--<span>电话:0311－85101385&nbsp; 传真：0311－85661213&nbsp;&nbsp;</span><br>-->
+    <!--<span>地址: 石家庄市建设南大街槐安路交口西南角国富大厦11层</span>-->
+    <!--</div>-->
+    <div class="company_div"></div>
+    <div class="company">
+        <span>石家庄市静远电子科技有限公司 备案/许可证编号为：冀ICP备15006707号</span><br>
+        <span>电话:0311－85101385&nbsp; 传真：0311－85661213&nbsp;&nbsp;</span><br>
+        <span>地址: 石家庄市建设南大街槐安路交口西南角国富大厦11层</span>
+    </div>
+</div>
+
+</body>
+</html>

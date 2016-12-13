@@ -8,6 +8,58 @@
 .table tr{
     height:25.5pt
 }
-.table tr td{
-   height: 54.0px; width: 54px; font-size: 10.5px; text-align: center; vertical-align: middle; white-space: normal; color: windowtext; font-weight: 400; font-style: normal; text-decoration: none; font-family: 宋体; border: .5pt solid windowtext;
+/*.table tr td{*/
+   /*height: 54.0px; width: 54px; font-size: 10.5px; text-align: center; vertical-align: middle; white-space: normal; color: windowtext; font-weight: 400; font-style: normal; text-decoration: none; font-family: 宋体; border: .5pt solid windowtext;*/
+/*}*/
+.headerThree, .headerLitter{
+    width: 54pt;
+    font-size: 10.5pt;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    color: windowtext;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    /*border: .5pt solid ;*/
+    background: #fffffc;
+    padding: 0px;
+}
+.headerThree{
+    height: 80.0pt;
+}
+.body_tr{
+    height: 59.25pt;
+    /*height: 79px;*/
+}
+.body_tr td{
+    width: 72px;
+    height: 52.5pt;
+    /*width: 54pt;*/
+    font-size: 10.5pt;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    color: windowtext;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    border-top: 1pt solid rgb(207,5,11);
+    border-bottom: 1pt solid rgb(207,5,11);
+    padding: 0px;
+    /*background: #e2e2d8;*/
+}
+
+.body_tr img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width:150px;
+    height:79px;
+}
+.body_tr span{
+    lang:"EN-US";
+}
+*{
+    cursor: default;
 }
